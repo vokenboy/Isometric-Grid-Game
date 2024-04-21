@@ -17,10 +17,9 @@ public class IsometricGridPanel extends JPanel {
     private final GridController gridController;
 
     public IsometricGridPanel() {
-        setPreferredSize(new Dimension(800, 600));
+        setPreferredSize(new Dimension(1280, 720));
         Player player = new Player(0, 0);
-        Tile playerTile = new Tile(0, 0);
-        playerRenderer = new PlayerRenderer(playerTile, player);
+        playerRenderer = new PlayerRenderer(player);
 
         gridController = new GridController(tiles, cameraOffset, player, this);
 

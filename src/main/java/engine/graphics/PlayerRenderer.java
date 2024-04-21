@@ -4,11 +4,9 @@ import main.java.game.characters.Player;
 import java.awt.*;
 
 public class PlayerRenderer {
-    public Tile Tile;
     public Player Player;
 
-    public PlayerRenderer(Tile tile, Player player) {
-        this.Tile = tile;
+    public PlayerRenderer(Player player) {
         this.Player = player;
     }
 
