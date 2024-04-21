@@ -13,31 +13,31 @@ public class MouseHandler extends MouseAdapter {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getButton() == MouseEvent.BUTTON3) {
-            panel.updatePlayerPosition(e);
+            panel.getGridController().updatePlayerPosition(e);
         }
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
         if (e.getButton() == MouseEvent.BUTTON1) {
-            panel.setDragStartPoint(e.getPoint());
+            panel.getGridController().setDragStartPoint(e.getPoint());
         }
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         if (e.getButton() == MouseEvent.BUTTON1) {
-            panel.setDragStartPoint(null);
+            panel.getGridController().setDragStartPoint(null);
         }
     }
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        panel.updateHoveredTile(e);
+        panel.getGridController().updateHoveredTile(e);
     }
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        panel.updateCameraPosition(e);
+        panel.getGridController().updateCameraPosition(e);
     }
 }
