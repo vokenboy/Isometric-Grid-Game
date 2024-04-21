@@ -1,15 +1,13 @@
 package main.java.engine.graphics;
 
-import main.java.game.character.Player;
+import main.java.game.characters.Player;
 
 import java.awt.*;
 
 public class PlayerRenderer {
-    private Player player;
-    private Tile tile;
+    private final Tile tile;
 
-    public PlayerRenderer(Player player, Tile tile) {
-        this.player = player;
+    public PlayerRenderer(Tile tile) {
         this.tile = tile;
     }
 

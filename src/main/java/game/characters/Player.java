@@ -1,4 +1,4 @@
-package main.java.game.character;
+package main.java.game.characters;
 
 import java.awt.*;
 
